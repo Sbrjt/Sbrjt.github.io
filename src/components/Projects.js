@@ -18,7 +18,7 @@ function Projects() {
 						key={id}
 					>
 						<PinContainer title='Visit' href={item.link}>
-							<div className='w-80 md:w-150 p-5'>
+							<div className='w-[80vw] md:w-150 p-[5vw] md:p-9'>
 								<div className='relative flex items-center justify-center w-full overflow-hidden h-40 md:h-60 mb-10 '>
 									<div
 										className='relative w-full h-full overflow-hidden rounded-xl md:rounded-3xl'
@@ -41,7 +41,7 @@ function Projects() {
 									{item.title}
 								</h1>
 								<p
-									className='lg:text-xl lg:font-normal font-light text-sm line-clamp-3 text-slate-500'
+									className='lg:text-xl lg:font-normal font-light line-clamp-3 text-slate-500'
 									style={{
 										margin: '1vh 0',
 									}}

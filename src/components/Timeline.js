@@ -37,7 +37,7 @@ export default function TimelineDemo() {
 function Card({ role, company, period }) {
 	return (
 		<div>
-			<Cover className='text-2xl md:text-4xl'>{role}</Cover>
+			<Cover className='text-2xl md:text-4xl select-none'>{role}</Cover>
 			<p className='text-white'>{company}</p>
 			<p className='text-blue-400'>{period}</p>
 		</div>

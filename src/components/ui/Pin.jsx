@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'motion/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -11,6 +11,12 @@ export const PinContainer = ({
 	className,
 	containerClassName,
 }) => {
+	const [isMobile, setIsMobile] = useState(false)
+
+	useEffect(() => {
+		setIsMobile(window.innerWidth <= 768)
+	}, [])
+
 	const [transform, setTransform] = useState(
 		'translate(-50%,-50%) rotateX(0deg)'
 	)
@@ -18,6 +24,7 @@ export const PinContainer = ({
 	const onMouseEnter = () => {
 		setTransform('translate(-50%,-50%) rotateX(40deg) scale(0.8)')
 	}
+
 	const onMouseLeave = () => {
 		setTransform('translate(-50%,-50%) rotateX(0deg) scale(1)')
 	}
@@ -25,15 +32,11 @@ export const PinContainer = ({
 	return (
 		<div
 			className={cn(
-				'relative group/pin z-50 cursor-pointer touch-none md:touch-auto',
+				'h-full relative group/pin z-50 cursor-pointer touch-none md:touch-auto',
 				containerClassName
 			)}
-			onMouseEnter={onMouseEnter}
-			onMouseLeave={onMouseLeave}
-			onTouchStart={(e) => {
-				e.preventDefault()
-				console.log('touch')
-			}}
+			onMouseEnter={!isMobile ? onMouseEnter : () => {}}
+			onMouseLeave={!isMobile ? onMouseLeave : () => {}}
 		>
 			<div
 				style={{
@@ -47,7 +50,7 @@ export const PinContainer = ({
 					style={{
 						transform: transform,
 					}}
-					className=' absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden'
+					className='absolute left-1/2 top-1/2 flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden'
 				>
 					<div className={cn(' relative z-50 ', className)}>{children}</div>
 				</a>
@@ -59,8 +62,8 @@ export const PinContainer = ({
 
 const PinPerspective = ({ title, href }) => {
 	return (
-		<motion.div className='w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500'>
-			<div id='xx' className=' w-full h-full -mt-7 flex-none  inset-0'>
+		<motion.div className='w-[80vw] md:w-150 h-96 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500'>
+			<div className=' w-full h-full -mt-7 flex-none  inset-0'>
 				<div className='absolute top-0 inset-x-0  flex justify-center'>
 					<a
 						href={href}
