@@ -18,7 +18,7 @@ function Projects() {
 						key={id}
 					>
 						<PinContainer title='Visit' href={item.link}>
-							<div className='w-[80vw] md:w-150 p-[5vw] md:p-9'>
+							<div className='w-[80vw] md:w-150 p-[8vw] md:p-9'>
 								<div className='relative flex items-center justify-center w-full overflow-hidden h-40 md:h-60 mb-10 '>
 									<div
 										className='relative w-full h-full overflow-hidden rounded-xl md:rounded-3xl'
@@ -48,7 +48,7 @@ function Projects() {
 								>
 									{item.des}
 								</p>
-								<div className='flex items-center justify-between mt-7 mb-3'>
+								<div className='flex items-center justify-between mt-7 md:mb-3'>
 									<div className='flex items-center'>
 										{item.iconLists.map((icon, index) => (
 											<div
