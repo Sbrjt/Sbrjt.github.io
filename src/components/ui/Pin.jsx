@@ -1,8 +1,7 @@
 'use client'
+import { cn } from '@/lib/utils'
 import { motion } from 'motion/react'
 import { useEffect, useState } from 'react'
-
-import { cn } from '@/lib/utils'
 
 export const PinContainer = ({
 	children,
@@ -32,11 +31,13 @@ export const PinContainer = ({
 	return (
 		<div
 			className={cn(
-				'h-full relative group/pin z-50 cursor-pointer touch-none md:touch-auto',
+				'h-full relative group/pin z-50 cursor-pointer',
 				containerClassName
 			)}
-			onMouseEnter={!isMobile ? onMouseEnter : () => {}}
-			onMouseLeave={!isMobile ? onMouseLeave : () => {}}
+			{...(!isMobile && {
+				onMouseEnter,
+				onMouseLeave,
+			})}
 		>
 			<div
 				style={{
