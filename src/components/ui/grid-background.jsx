@@ -2,7 +2,7 @@ function gridBackground() {
 	return (
 		<>
 			<div
-				className='-z-10 absolute inset-0'
+				className='z-10 absolute inset-0'
 				style={{
 					backgroundSize: '100px 100px',
 					backgroundImage:

@@ -1,10 +1,9 @@
 'use client'
-import { WavyBackground } from './ui/wavy-background'
 
 function Test() {
 	return (
 		<>
-			<div className='relative text-center'>
+			{/* <div className='relative text-center'>
 				<WavyBackground
 					className='mx-auto'
 					backgroundFill='black'
@@ -26,6 +25,9 @@ function Test() {
 				>
 					Bold Text Here
 				</div>
+			</div> */}
+			<div className='relative w-fit bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-clip-text text-transparent py-4'>
+				<span className='text-4xl font-bold'>Exploding beams.</span>
 			</div>
 		</>
 	)

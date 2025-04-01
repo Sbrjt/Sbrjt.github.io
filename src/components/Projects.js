@@ -7,14 +7,18 @@ import { PinContainer } from './ui/Pin'
 function Projects() {
 	return (
 		<div className='pt-20 pb-0.5 bg-[#000319]'>
-			<h1 className='md:text-6xl text-3xl bg-clip-text text-transparent bg-gradient-to-b from-slate-200 to-slate-600 font-bold px-5 pb-1 md:pb-3 text-center'>
-				A small selection of <br />
-				recent <span id='Projects'> projects</span>
+			<h1 className='md:text-5xl text-3xl font-bold px-5 pb-1 md:pb-3 text-center'>
+				<div className='text-gradient from-slate-200 to-slate-700'>
+					A small selection of
+				</div>
+				<div className='text-bluepink mx-auto pb-3'>
+					recent <span id='Projects'> projects</span>
+				</div>
 			</h1>
-			<div className='flex flex-wrap items-center justify-center p-10 gap-16 m-20'>
+			<div className='flex flex-wrap items-center justify-center gap-16 mt-10 md:mt-0 mb-20 md:mb-60'>
 				{projects.map((item, id) => (
 					<div
-						className='mx-40 lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'
+						className='mx-40 lg:pt-40 lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'
 						key={id}
 					>
 						<PinContainer title='Visit' href={item.link}>
@@ -58,10 +62,16 @@ function Projects() {
 													transform: `translateX(-${5 * index + 2}px)`,
 												}}
 											>
-												<img src={icon} alt='icon5' className='p-2' />
+												<Image
+													src={icon}
+													alt={icon}
+													className='p-2 object-contain'
+													fill
+												/>
 											</div>
 										))}
 									</div>
+
 									{/* <div className='flex justify-center items-center text-purple-300'>
 										<p className='flex lg:text-xl md:text-xs text-sm text-purple'>
 											Check Live Site

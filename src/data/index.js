@@ -1,10 +1,10 @@
 import {
+	FaClosedCaptioning,
 	FaGithub,
-	FaInstagram,
 	FaLinkedin,
-	FaReddit,
 	FaStackOverflow,
 } from 'react-icons/fa'
+import { SiLeetcode } from 'react-icons/si'
 
 const projects = [
 	{
@@ -59,15 +59,17 @@ const connect = [
 		Icon: FaLinkedin,
 	},
 	{ link: 'https://github.com/Sbrjt', Icon: FaGithub },
+	{ link: 'https://leetcode.com/u/user1484IW/', Icon: SiLeetcode },
+	{ link: 'https://www.codechef.com/users/sbrjt', Icon: FaClosedCaptioning },
 	{
 		link: 'https://stackoverflow.com/users/14313852/shub',
 		Icon: FaStackOverflow,
 	},
-	{
-		link: 'https://chat.reddit.com/user/t2_apzmupyj',
-		Icon: FaReddit,
-	},
-	{ link: 'https://www.instagram.com/shubjt/', Icon: FaInstagram },
+	// {
+	// 	link: 'https://chat.reddit.com/user/t2_apzmupyj',
+	// 	Icon: FaReddit,
+	// },
+	// { link: 'https://www.instagram.com/shubjt/', Icon: FaInstagram },
 ]
 
 export { connect, projects, techStack }
