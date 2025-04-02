@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function TechStack() {
 	return (
-		<div className='bg-[#000319]'>
+		<div className='bg-[#000319] pt-10'>
 			<div
 				className='w-auto mx-5 md:mx-20'
 				style={{
