@@ -1,4 +1,3 @@
-'use client'
 import { BiBuildings } from 'react-icons/bi'
 import { GoProjectRoadmap } from 'react-icons/go'
 import { HiHome } from 'react-icons/hi'

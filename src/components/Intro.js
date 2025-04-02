@@ -28,7 +28,7 @@ function Intro() {
 						</div>
 					</div>
 
-					<div className='flex justify-between gap-2 text-lg md:pr-3'>
+					<div className='flex justify-between gap-2 text-lg md:pr-10 md:w-96'>
 						<a
 							className='relative inline-flex h-12 overflow-hidden rounded-full p-0.5 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'
 							href='https://www.linkedin.com/in/shubhrajit-sadhukhan'
