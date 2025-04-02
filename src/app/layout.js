@@ -29,4 +29,7 @@ export const metadata = {
 		type: 'website',
 		url: 'https://sbrjt.github.io/',
 	},
+	other: {
+		'google-adsense-account': 'ca-pub-7149799351566746',
+	},
 }
