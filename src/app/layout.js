@@ -26,7 +26,7 @@ export const metadata = {
 	openGraph: {
 		title: 'My Portfolio',
 		description: '~ Shubhrajit Sadhukhan',
-		type: 'website',
+		// type: 'website',
 		// url: 'https://sbrjt.github.io/',
 		images: 'https://sbrjt.github.io/favicon.ico',
 	},
