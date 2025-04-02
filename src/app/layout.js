@@ -1,19 +1,11 @@
 import Theme from '@/components/theme'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<head>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZM4P4CY40X"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-ZM4P4CY40X');
-                </script>
-            </head>
+			<GoogleAnalytics gaId='G-ZM4P4CY40X' />
 			<body>
 				<Theme
 					attribute='class'
