@@ -28,6 +28,7 @@ export const metadata = {
 		description: 'Welcome to my portfolio website - Shubhrajit Sadhukhan',
 		type: 'website',
 		url: 'https://sbrjt.github.io/',
+		images: 'https://sbrjt.github.io/favicon.ico',
 	},
 	other: {
 		'google-adsense-account': 'ca-pub-7149799351566746',
