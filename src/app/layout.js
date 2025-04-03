@@ -1,5 +1,5 @@
-import Theme from '@/components/theme'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { ThemeProvider } from 'next-themes'
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -7,14 +7,15 @@ export default function RootLayout({ children }) {
 		<html lang='en' suppressHydrationWarning>
 			<GoogleAnalytics gaId='G-ZM4P4CY40X' />
 			<body>
-				<Theme
+				<ThemeProvider
+					forcedTheme='dark'
 					attribute='class'
 					defaultTheme='dark'
-					// enableSystem
+					enableSystem={false}
 					// disableTransitionOnChange
 				>
 					{children}
-				</Theme>
+				</ThemeProvider>
 			</body>
 		</html>
 	)
@@ -24,10 +25,8 @@ export const metadata = {
 	title: 'My Portfolio :･ﾟ✧',
 	description: "Hi! I'm Shubhrajit Sadhukhan. Welcome to my portfolio.",
 	openGraph: {
-		title: 'My Awesome Portfolio',
+		title: 'My Awesome Portfolio 😎',
 		description: '~ Shubhrajit Sadhukhan',
-		// type: 'website',
-		// url: 'https://sbrj t.github.io/',
 		images: 'https://sbrjt.github.io/favicon.ico',
 	},
 	other: {
