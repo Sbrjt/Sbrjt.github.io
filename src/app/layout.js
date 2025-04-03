@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
 export const metadata = {
 	title: 'My Portfolio :･ﾟ✧',
 	description: "Hi! I'm Shubhrajit Sadhukhan. Welcome to my portfolio.",
+	themeColor: '#10131a',
 	openGraph: {
 		title: 'My Awesome Portfolio 😎',
 		description: '~ Shubhrajit Sadhukhan',

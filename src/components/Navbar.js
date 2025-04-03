@@ -10,34 +10,28 @@ export default function Navbar() {
 		{
 			name: 'Home',
 			link: '#',
-			icon: <HiHome className='h-4 w-4 text-neutral-500 dark:text-white' />,
+			icon: <HiHome className='h-4 w-4 text-white' />,
 		},
 		{
 			name: 'Projects',
 			link: '#Projects',
-			icon: (
-				<GoProjectRoadmap className='h-4 w-4 text-neutral-500 dark:text-white' />
-			),
+			icon: <GoProjectRoadmap className='h-4 w-4 text-white' />,
 		},
 		{
 			name: 'Experience',
 			link: '#Experience',
-			icon: (
-				<BiBuildings className='h-4 w-4 text-neutral-500 dark:text-white' />
-			),
+			icon: <BiBuildings className='h-4 w-4 text-white' />,
 		},
 		{
 			name: 'Education',
 			link: '#Education',
-			icon: <TbSchool className='h-4 w-4 text-neutral-500 dark:text-white' />,
+			icon: <TbSchool className='h-4 w-4 text-white' />,
 		},
 
 		{
 			name: 'Contact',
 			link: '#Contact',
-			icon: (
-				<IoMdContact className='h-4 w-4 text-neutral-500 dark:text-white' />
-			),
+			icon: <IoMdContact className='h-4 w-4 text-white' />,
 		},
 	]
 

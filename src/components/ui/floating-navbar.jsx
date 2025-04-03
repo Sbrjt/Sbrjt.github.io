@@ -51,7 +51,7 @@ export const FloatingNav = ({ navItems, className }) => {
 							duration: 0.2,
 						}}
 						className={cn(
-							'gap-5 py-5 px-7 md:px-10 flex items-center justify-between max-w-fit fixed top-6 inset-x-0 mx-auto border border-transparent backdrop-blur-sm dark:border-white/[0.2] rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]',
+							'gap-5 py-5 px-7 md:px-10 flex items-center justify-between max-w-fit fixed top-6 inset-x-0 mx-auto border backdrop-blur-sm border-white/[0.2] rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]',
 							className
 						)}
 					>
@@ -61,7 +61,7 @@ export const FloatingNav = ({ navItems, className }) => {
 			) : (
 				<div
 					className={cn(
-						'gap-5 py-5 px-7 md:px-10 absolute top-6 inset-x-0 flex items-center justify-between max-w-fit mx-auto border border-transparent backdrop-blur-sm dark:border-white/[0.2] rounded-full bg-transparent shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]',
+						'gap-5 py-5 px-7 md:px-10 absolute top-6 inset-x-0 flex items-center justify-between max-w-fit mx-auto border backdrop-blur-sm border-white/[0.2] rounded-full bg-transparent shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000]',
 						className
 					)}
 				>
