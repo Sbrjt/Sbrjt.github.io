@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
 export const metadata = {
 	title: 'My Portfolio :･ﾟ✧',
 	description: "Hi! I'm Shubhrajit Sadhukhan. Welcome to my portfolio.",
-	themeColor: '#10131a',
 	openGraph: {
 		title: 'My Awesome Portfolio 😎',
 		description: '~ Shubhrajit Sadhukhan',
@@ -34,4 +33,8 @@ export const metadata = {
 		'google-adsense-account': 'ca-pub-7149799351566746',
 		'google-site-verification': 'xlUTCUMRvEa8sgN7C4hDnxgR_f2yoeUouYWNG6qlhv4',
 	},
+}
+
+export const viewport = {
+	themeColor: '#10131a',
 }
